@@ -1,0 +1,36 @@
+!!!
+%html.no-js{:dir => "ltr", :lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Foundation for Sites
+    %link{:href => "/stylesheet/css/foundation.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheet/css/app.css", :rel => "stylesheet"}/
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
+
+
+  %body
+  .navigation
+    %ul
+      %img{:src => "/images/logo2.jpg"}/
+      %li
+        %a{:href => "menu"} Portfolio
+      %li
+        %a{:href => "cart"} About Me
+      %li
+        %a{:href => "/auth/login"} Blog
+      %li
+        %a{:href => "/owner"} Home
+
+    .row
+
+    = yield
+    = partial 'partials/header'
+    = partial 'partials/footer'
+    %script{:src => "js/vendor/jquery.js"}
+    %script{:src => "js/vendor/what-input.js"}
+    %script{:src => "js/vendor/foundation.js"}
+    %script{:src => "js/app.js"}
