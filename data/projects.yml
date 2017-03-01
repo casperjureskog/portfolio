@@ -1,5 +1,14 @@
-- name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
+- name: BMI Calculator
+  description: Simple a simple BMI calculator Javascript
+  Website: https://casperjureskog.github.io/BMI_Challange/
+  images: "/images/bmi.jpg"
 
 - name: FizzBuzz
-  description: My first Test driven ruby project
+  description: This is a small game made with Javascript
+  Website: https://casperjureskog.github.io/fizz_buzz_js_game/
+  images: "/images/fizz_buzz.jpg"
+
+- name: Slow Food
+  description: This is a resturang page fore take out ordering
+  Website: https://casperjureskog.github.io/fizz_buzz_js_game/
+  images: "/images/slowfood.jpg"

@@ -1,0 +1,15 @@
+.large-12.medium-12.small-12.portfolio2#project.columns
+ %br
+ %br
+ %br
+ %br
+
+ - data.projects.each do |project|
+  .row.project2
+   .large-6.medium-6.small-6.project7.columns
+   %h4= project[:name]
+   %p= project[:description]
+   %a{href: project[:website]}= project[:Website]
+   .row.project4
+    .large-12.medium-12.small-12.project5.columns
+     %img{src: project[:images]}

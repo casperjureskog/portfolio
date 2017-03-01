@@ -1,12 +1,5 @@
 
 
-.large-12.medium-12.small-12.bgimage.columns
+.large-12.medium-12.small-12.bgimage#home.columns
   %div.logo
     %img{:src => "/images/Log.png"}/
-
-.row
-  .large-12.medium-12.small-12.columns
-
-  - data.projects.each do |project|
-    %h4= project[:name]
-    %p= project[:description]

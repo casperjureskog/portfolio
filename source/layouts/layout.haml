@@ -5,32 +5,26 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %title Foundation for Sites
-    %link{:href => "/stylesheet/css/foundation.css", :rel => "stylesheet"}/
-    %link{:href => "/stylesheet/css/app.css", :rel => "stylesheet"}/
+    %title Casper Jureskog Portfolio
+    %link{:href => "/stylesheets/foundation.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/app.css", :rel => "stylesheet"}/
     = stylesheet_link_tag "site"
     = javascript_include_tag "site"
 
 
   %body
-  .navigation
-    %ul
-      %img{:src => "/images/logo2.jpg"}/
-      %li
-        %a{:href => "menu"} Portfolio
-      %li
-        %a{:href => "cart"} About Me
-      %li
-        %a{:href => "/auth/login"} Blog
-      %li
-        %a{:href => "/owner"} Home
-
     .row
 
-    = yield
-    = partial 'partials/header'
-    = partial 'partials/footer'
-    %script{:src => "js/vendor/jquery.js"}
-    %script{:src => "js/vendor/what-input.js"}
-    %script{:src => "js/vendor/foundation.js"}
-    %script{:src => "js/app.js"}
+
+
+      = partial 'partials/menu'
+      %br
+      = yield
+      = partial 'partials/portfolio'
+      = partial 'partials/about'
+      -# = partial 'partials/header'
+
+      %script{:src => "javascripts/jquery.js"}
+      %script{:src => "javascripts/what-input.js"}
+      %script{:src => "javascripts/foundation.js"}
+      %script{:src => "javascripts/app.js"}
