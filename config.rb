@@ -26,7 +26,10 @@ end
 ###
 # Helpers
 ###
-
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+end
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
