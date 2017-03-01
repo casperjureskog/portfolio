@@ -1,20 +1,20 @@
 body {
-  background-color: #333;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 1rem 1rem;
-  text-align: center;
-  top: 0%;
-  left: 0%;
+    background-color: #333;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+      "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+      "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+      "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+    padding: 1rem 1rem;
+    text-align: center;
+    top: 0%;
+    left: 0%;
 }
 
 a {
-  color: rgba(#000, 0.7);
-  &:focus,
-  &:hover {
+    color: rgba(#000, 0.7);
+    &:focus,
+    &:hover {
     color: rgba(#000, 0.6);
   }
 }
@@ -23,8 +23,17 @@ a {
     padding: 0px 0px;
 }
 
+.jag {
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px black;
+    position: relative;
+    top: 34rem;
+    left: 25rem;
+    z-index: 45;
+}
+
 p {
-  color: #999;
+    color: #999;
 }
 
 .bgimage {
@@ -62,23 +71,24 @@ p {
 }
 
 .about2 {
-  width: 500px;
-  height: 400px;
-  background-color: #fff;
-  opacity: 0.6;
-  position: absolute;
-  left: 30%;
-  top: 17rem;
-  padding:30px 50px;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    left: 30%;
+    top: 17rem;
+    padding:30px 50px;
+    box-shadow: 4px 4px 8px black;
 }
 
 .logo {
-      opacity: 0.7;
-      // z-index: -50;
-      position:relative;
-      top: 15rem;
-      left:4rem;
+    opacity: 0.7;
+    position:relative;
+    top: 15rem;
+    left:4rem;
 }
+
 
 h3 {
    color: #999;
@@ -87,6 +97,26 @@ h3 {
 h5 {
    color: #999;
 
+}
+
+.headline {
+    color: #fff;
+    position:relative;
+    top: 13rem;
+    left:2rem;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    opacity: 0.9;
+}
+
+@-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #24ECEC, 0 0 70px #24ECEC, 0 0 80px #24ECEC, 0 0 100px #24ECEC, 0 0 150px #24ECEC;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #89F6F6, 0 0 35px #89F6F6, 0 0 40px #89F6F6, 0 0 50px #89F6F6, 0 0 75px #89F6F6;
+    }
 }
 
 ul {
@@ -121,25 +151,24 @@ li a:hover:not(.active) {
 }
 
 .project2 {
-  background-color: #fff;
-  width:50rem;
-  height: 9rem;
-  float:left;
-  margin-top: 3%;
-  box-shadow: 4px 4px 8px black;
-  position: relative;
-  text-align: left;
-  padding: 3px 175px;
-  opacity: 0.9;
-
+    background-color: #fff;
+    width:50rem;
+    height: 9rem;
+    float:left;
+    margin-top: 3%;
+    box-shadow: 4px 4px 8px black;
+    position: relative;
+    text-align: left;
+    padding: 3px 175px;
+    opacity: 0.9;
 }
 
 .project4 {
-  position:relative;
-  width:12rem;
-  height:12rem;
-  left:28.7rem;
-  top:-6.7rem;
-  z-index: -0;
-  opacity: 1;
+    position:relative;
+    width:12rem;
+    height:12rem;
+    left:28.7rem;
+    top:-6.7rem;
+    z-index: -0;
+    opacity: 1;
 }

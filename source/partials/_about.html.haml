@@ -1,6 +1,10 @@
 .large-12.medium-12.small-12.about#about.columns
+ %div
+  %img.jag{src: "/images/casperj.jpg"}/
  .large-12.medium-12.small-12.about2.columns
   - data.about.each do |project|
    %br
    %h2= project[:about]
    %p= project[:text]
+   %p= project[:tel]
+   %p= project[:email]
